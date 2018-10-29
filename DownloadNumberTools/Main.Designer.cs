@@ -10,7 +10,7 @@ namespace DownloadNumberTools
         /// 必需的设计器变量。
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-         
+
         /// <summary>
         /// 清理所有正在使用的资源。
         /// </summary>
@@ -32,31 +32,16 @@ namespace DownloadNumberTools
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClose = new System.Windows.Forms.Button();
             this.panelEx1 = new DownloadNumberTools.Controls.PanelEx();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMin = new DownloadNumberTools.Controls.ButtonEx();
+            this.btnClose = new DownloadNumberTools.Controls.ButtonEx();
             this.panelEx1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(760, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(40, 40);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // panelEx1
             // 
             this.panelEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(63)))), ((int)(((byte)(228)))));
-            this.panelEx1.Controls.Add(this.button1);
+            this.panelEx1.Controls.Add(this.btnMin);
             this.panelEx1.Controls.Add(this.btnClose);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
@@ -64,20 +49,47 @@ namespace DownloadNumberTools
             this.panelEx1.Size = new System.Drawing.Size(800, 50);
             this.panelEx1.TabIndex = 0;
             // 
-            // button1
+            // btnMin
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(720, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Font = new System.Drawing.Font("FontAwesome", 12F);
+            this.btnMin.FontAwesomeSize = 12;
+            this.btnMin.ForeColor = System.Drawing.Color.White;
+            this.btnMin.IconCode = "f2d1";
+            this.btnMin.Location = new System.Drawing.Point(710, 0);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMin.MouseDownForeColor = System.Drawing.Color.White;
+            this.btnMin.MouseEnterForeColor = System.Drawing.Color.White;
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(45, 29);
+            this.btnMin.TabIndex = 2;
+            this.btnMin.Text = "";
+            this.btnMin.UseFontAwesome = true;
+            this.btnMin.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(112)))), ((int)(((byte)(122)))));
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("FontAwesome", 14F);
+            this.btnClose.FontAwesomeSize = 14;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.IconCode = "f00d";
+            this.btnClose.Location = new System.Drawing.Point(755, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClose.MouseDownForeColor = System.Drawing.Color.White;
+            this.btnClose.MouseEnterForeColor = System.Drawing.Color.White;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(45, 29);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "";
+            this.btnClose.UseFontAwesome = true;
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -100,8 +112,8 @@ namespace DownloadNumberTools
         #endregion
 
         private Controls.PanelEx panelEx1;
-        private System.Windows.Forms.Button btnClose;
-        private Button button1;
+        private Controls.ButtonEx btnMin;
+        private Controls.ButtonEx btnClose;
     }
 }
 

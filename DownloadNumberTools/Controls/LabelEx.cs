@@ -1,33 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DownloadNumberTools
+
+namespace DownloadNumberTools.Controls
 {
-    public partial class Main : Form
+    public class LabelEx : Label
     {
-        public Main()
+        public LabelEx()
         {
+            this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.UserPaint, true);
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             this.SetStyle(ControlStyles.DoubleBuffer, true);
+            this.SetStyle(ControlStyles.Selectable, false);
             this.UpdateStyles();
 
-            InitializeComponent();
-            
-            this.Load += OnLoad;
+            FontAwesomeFactory.InitiailseFont();
         }
-        
-        private void OnLoad(object sender, EventArgs e)
-        {
 
+        public Font FontAwesome
+        {
+            get;
+            private set;
         }
+
     }
 }

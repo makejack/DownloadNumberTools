@@ -3,7 +3,7 @@ using System.Drawing.Text;
 
 namespace DownloadNumberTools
 {
-    static class Fonts
+    public class Fonts
     {
 
         public static string FontAwesomeTTF { get; set; }
@@ -18,7 +18,7 @@ namespace DownloadNumberTools
         {
             FontAwesomeTTF = @"font/fontawesome-webfont.ttf";
             Style = FontStyle.Regular;
-            Size = 20;
+            Size = SystemFonts.DefaultFont.Size;
             Reload();
         }
         
@@ -48,7 +48,7 @@ namespace DownloadNumberTools
             Reload();
         }
 
-        private static string UnicodeToChar(string hex)
+        public static string UnicodeToChar(string hex)
         {
             int code = int.Parse(hex, System.Globalization.NumberStyles.HexNumber);
             string unicodeString = char.ConvertFromUtf32(code);
@@ -2583,6 +2583,7 @@ namespace DownloadNumberTools
             public static string vimeo { get { return UnicodeToChar("f27d"); } }
             public static string black_tie { get { return UnicodeToChar("f27e"); } }
             public static string fonticons { get { return UnicodeToChar("f280"); } }
+            public static string window_minimize { get { return UnicodeToChar("f2d1"); } }
         }
     }
 }

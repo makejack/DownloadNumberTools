@@ -47,7 +47,11 @@
     <Compile Include="Controls\ButtonEx.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\FontAwesomeFactory.cs" />
     <Compile Include="Controls\ImageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LabelEx.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\PanelEx.cs">
@@ -73,13 +77,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="font\fontawesome-webfont.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="font\FontAwesome.otf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="bin\Debug\fonts\fontawesome-webfont.ttf" />
+    <None Include="bin\Debug\fonts\FontAwesome.otf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +90,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\fontawesome-webfont.ttf" />
+    <None Include="Resources\FontAwesome.otf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
