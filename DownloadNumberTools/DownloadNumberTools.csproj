@@ -42,12 +42,26 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsBase.4.6.1055.0\lib\WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\ButtonEx.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\CheckBoxButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\FontAwesomeFactory.cs" />
+    <Compile Include="Controls\FormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Controls\ImageEx.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -57,7 +71,21 @@
     <Compile Include="Controls\PanelEx.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Fonts.cs" />
+    <Compile Include="Controls\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ItemForm\TabForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemForm\TabForm.Designer.cs">
+      <DependentUpon>TabForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemForm\TabForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemForm\TabForm2.Designer.cs">
+      <DependentUpon>TabForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +94,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinApi.cs" />
+    <EmbeddedResource Include="ItemForm\TabForm.resx">
+      <DependentUpon>TabForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemForm\TabForm2.resx">
+      <DependentUpon>TabForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +116,7 @@
     </Compile>
     <None Include="bin\Debug\fonts\fontawesome-webfont.ttf" />
     <None Include="bin\Debug\fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,6 +128,11 @@
     </Compile>
     <None Include="Resources\fontawesome-webfont.ttf" />
     <None Include="Resources\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Count_tool.ico" />
+    <None Include="Resources\Count_tool_123_32.png" />
+    <None Include="Resources\format_list_numbered_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

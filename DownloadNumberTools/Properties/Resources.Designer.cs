@@ -61,6 +61,26 @@ namespace DownloadNumberTools.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Count_tool {
+            get {
+                object obj = ResourceManager.GetObject("Count_tool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Count_tool_123_32 {
+            get {
+                object obj = ResourceManager.GetObject("Count_tool_123_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
         internal static byte[] FontAwesome {
@@ -77,6 +97,16 @@ namespace DownloadNumberTools.Properties {
             get {
                 object obj = ResourceManager.GetObject("fontawesome_webfont", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap format_list_numbered_32 {
+            get {
+                object obj = ResourceManager.GetObject("format_list_numbered_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
